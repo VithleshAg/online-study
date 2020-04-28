@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import SignUp from "../Instructor/SignUp";
 import SignIn from "../Instructor/SignIn";
 import ForgotPassword from "../Instructor/ForgotPassword";
+import Home from "./Home";
 
 const Index = () => {
   const [child, setChild] = useState("");
@@ -20,8 +21,10 @@ const Index = () => {
       return <SignUp clickHandler={navbarHandler} />;
     } else if (child === "forgotpwd") {
       return <ForgotPassword clickHandler={navbarHandler} />;
+    } else if (child === "home") {
+      return <Home />;
     } else {
-      return <SignIn clickHandler={navbarHandler} />;
+      return <Home />;
     }
   };
 
