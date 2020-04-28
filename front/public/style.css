@@ -2,6 +2,27 @@ body {
   background: #dfe7e9;
   font-family: "Roboto", sans-serif;
 }
+
+@media only screen and (max-width: 640px) {
+  .signup-form {
+    width: 97%;
+    font-size: 12px;
+  }
+  .signup-form form {
+    margin-bottom: -25px;
+    padding: 0px 20px 15px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .signup-form {
+    width: 480px;
+  }
+  .signup-form form {
+    margin-bottom: -10px;
+    padding: 0px 40px 25px;
+  }
+}
+
 .form-group .form-control {
   font-size: 16px;
   transition: all 0.4s;
@@ -25,19 +46,21 @@ body {
   outline: none !important;
 }
 .signup-form {
-  width: 480px;
-  margin: 120px auto 0px;
+  margin: 30px auto 0px;
   padding: 15px 0;
   border-radius: 5px;
   background: #fff;
   box-shadow: 1px 1px 20px 1px darkcyan;
 }
-.signup-form form {
-  margin-bottom: -10px;
-  padding: 0px 40px 25px;
-}
-.signup-form a {
+.signup-form .anchor {
   color: #5cb85c;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+.signup-form .anchor:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
 .signup-form h2 {
   text-align: center;
@@ -130,7 +153,7 @@ body {
   height: 60px;
   /* z-index: 100; */
   width: 100%;
-  margin-top: -120px;
+  /* margin-top: -120px; */
   background-color: #fff;
   box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
