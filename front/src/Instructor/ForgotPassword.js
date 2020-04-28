@@ -73,7 +73,7 @@ const ForgotPassword = (props) => {
       </form>
       <div className="text-center">
         Back to{" "}
-        <a href="" onClick={() => props.clickHandler("signin")}>
+        <a className="anchor" onClick={() => props.clickHandler("signin")}>
           SignIn
         </a>
       </div>

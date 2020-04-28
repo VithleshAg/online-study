@@ -86,7 +86,7 @@ const SignIn = (props) => {
           />
         </div>
         <div className="forgotpwd">
-          <a href="" onClick={() => props.clickHandler("forgotpwd")}>
+          <a className="anchor" onClick={() => props.clickHandler("forgotpwd")}>
             Forgot Password?
           </a>
         </div>
@@ -101,7 +101,7 @@ const SignIn = (props) => {
       </form>
       <div className="text-center">
         Not have an account?{" "}
-        <a href="" onClick={() => props.clickHandler("signup")}>
+        <a className="anchor" onClick={() => props.clickHandler("signup")}>
           SignUp here
         </a>
       </div>

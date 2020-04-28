@@ -142,7 +142,7 @@ const SignUp = (props) => {
       </form>
       <div className="text-center">
         Already have an account?
-        <a href="" onClick={() => props.clickHandler("signin")}>
+        <a className="anchor" onClick={() => props.clickHandler("signin")}>
           SignIn here
         </a>
       </div>
